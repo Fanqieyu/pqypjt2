@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>商品列表页</title>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/products.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="icon" type="image/x-icon"  href="favicon.ico">
+</head>
+<body>
+  <header id="header" class="container"></header>
+
+    <div id="products" class="container">
+      <div class="bar row">
+        <div id="sort" class="sort col-xs-6 col-md-2">
+                    <span class="select" menu="sortMenu">
+                            置顶降序
+                        <i class="fa fa-angle-down"></i>
+                    </span>
+          <div id="sortMenu" class="selectOptions">
+            <ul>
+              <li class="current" ordertype="topDesc">
+                置顶降序
+              </li>
+              <li ordertype="priceAsc">
+                价格升序
+              </li>
+              <li ordertype="priceDesc">
+                价格降序
+              </li>
+              <li ordertype="salesDesc">
+                销量降序
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="pageCtrl col-md-10">
+          <div class="page">
+            <label>
+              共29件商品
+            </label>
+          </div>
+          <div id="layout" class="layout">
+            <a href="javascript:;" id="col3" class="col3 current">
+              <img src="/resources/shop/ckc/images/column3.jpg">
+            </a>
+            <a href="javascript:;" id="col6" class="col6">
+              <img src="/resources/shop/ckc/images/column6.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  <footer id="footer" class="container"></footer>
+
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
